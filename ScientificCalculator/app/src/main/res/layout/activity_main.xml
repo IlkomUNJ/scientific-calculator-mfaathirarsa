@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_display"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:gravity="bottom|end">
+
+        <TextView
+            android:id="@+id/tvsec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:gravity="end" />
+
+        <TextView
+            android:id="@+id/tvmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:textSize="36sp"
+            android:gravity="end"
+            android:text="@string/num_0" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/layout_buttons"
+        android:layout_below="@id/layout_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="7"
+        android:columnCount="5"
+        android:padding="8dp">
+
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bac" android:text="@string/clear_all"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bc" android:text="@string/clear"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bbrac1" android:text="@string/bracket_open"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bbrac2" android:text="@string/bracket_close"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bpi" android:text="@string/pi"/>
+
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bsin" android:text="@string/sin"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bcos" android:text="@string/cos"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/btan" android:text="@string/tan"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/blog" android:text="@string/log"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bln" android:text="@string/ln"/>
+
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/basin" android:text="@string/asin"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bacos" android:text="@string/acos"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/batan" android:text="@string/atan"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bpow" android:text="@string/power"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Op" android:id="@+id/bdiv" android:text="@string/divide"/>
+
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Num" android:id="@+id/b7" android:text="@string/num_7"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Num" android:id="@+id/b8" android:text="@string/num_8"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Num" android:id="@+id/b9" android:text="@string/num_9"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bsquare" android:text="@string/square"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Op" android:id="@+id/bmul" android:text="@string/multiply"/>
+
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Num" android:id="@+id/b4" android:text="@string/num_4"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Num" android:id="@+id/b5" android:text="@string/num_5"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Num" android:id="@+id/b6" android:text="@string/num_6"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bfact" android:text="@string/factorial"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Op" android:id="@+id/bminus" android:text="@string/minus"/>
+
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Num" android:id="@+id/b1" android:text="@string/num_1"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Num" android:id="@+id/b2" android:text="@string/num_2"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Num" android:id="@+id/b3" android:text="@string/num_3"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/binv" android:text="@string/inverse"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Op" android:id="@+id/bplus" android:text="@string/plus"/>
+
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Num" android:id="@+id/bdot" android:text="@string/dot"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Num" android:id="@+id/b0" android:text="@string/num_0"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Func" android:id="@+id/bsqrt" android:text="@string/sqrt"/>
+        <com.google.android.material.button.MaterialButton style="@style/CalcButton.Op" android:id="@+id/bequal" android:text="@string/equals" android:layout_columnSpan="2"/>
+    </GridLayout>
+
+</RelativeLayout>
