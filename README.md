@@ -2,7 +2,7 @@
 
 Name: Muhammad Faathir Arsa
 
-NIM:1313623023
+NIM: 1313623023
 
 # ScientificApplication
 This is blank template with the exception of this readme. You are free to push anything to this repo that are related to the homework. 
